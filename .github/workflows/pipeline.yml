@@ -25,7 +25,7 @@ jobs:
 
             - name: Build Docker image
               run: |
-                 docker build -t ${ { secrets.ECR_REPO} }:latest .
+                 docker build -t ${{ secrets.ECR_REPO }}:latest .
 
             - name: Push Docker image to Amazon ECR
               run: |
