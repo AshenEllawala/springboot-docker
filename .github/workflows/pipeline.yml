@@ -7,7 +7,7 @@ on:
    
 
 jobs:
-    dokcer-build-push:
+    docker-build-push:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
